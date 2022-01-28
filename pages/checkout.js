@@ -453,7 +453,7 @@ function Checkout(props) {
           <Grid item md={8}>
             <Card className={classes.p1}>
               <form>
-                <Stepper dir="rtl" sx={{style:{{direction="ltr"}}}} activeStep={activeStep} alternativeLabel>
+                <Stepper activeStep={activeStep} alternativeLabel>
                   {steps.map((label) => (
                     <Step key={label}>
                       <StepLabel> {label} </StepLabel>
@@ -476,7 +476,7 @@ function Checkout(props) {
                             onClick={handleBack}
                             className={classes.button}
                           >
-                            Back
+                            بازگشت
                           </Button>
                         </Box>
                       </Box>
@@ -484,7 +484,7 @@ function Checkout(props) {
                       <Box>
                         <CircularProgress />
                         <Typography className={classes.instructions}>
-                          Confirming Order
+                          ثبت سفارش
                         </Typography>
                       </Box>
                     )
@@ -506,8 +506,8 @@ function Checkout(props) {
                           className={classes.button}
                         >
                           {activeStep === steps.length - 1
-                            ? "Confirm Order"
-                            : "Next"}
+                            ? "ثبت سفارش"
+                            : "مرحله بعد"}
                         </Button>
                       </Box>
                     </Box>
