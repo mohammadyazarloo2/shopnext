@@ -537,7 +537,7 @@ function Checkout(props) {
                     </Grid>
                   </ListItem>
                 ))}
-                <ListItem key={lineItem.id}>
+                <ListItem>
                   <Grid container>
                     <Grid item xs={6} align="right">
                       جمع کل
