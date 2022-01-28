@@ -71,7 +71,7 @@ function Cart(props) {
                   <Table aria-lable="Orders">
                     <TableHead>
                       <TableRow>
-                        <TableCell>عنوان</TableCell>
+                        <TableCell align="right">عنوان</TableCell>
                         <TableCell align="right">موجودی</TableCell>
                         <TableCell align="right">قیمت</TableCell>
                         <TableCell align="right">عملیات</TableCell>
