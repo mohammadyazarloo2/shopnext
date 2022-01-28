@@ -42,7 +42,7 @@ export default function Layout({
     <React.Fragment>
       <Head>
         <meta charSet="utf-8" />
-        <title> {`${title} - shop`} </title>
+        <title> {`${title} - سبد خرید || تیم ماهر`} </title>
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
@@ -77,7 +77,7 @@ export default function Layout({
                       <CircularProgress />
                     ) : cart.data.total_items > 0 ? (
                       <Badge badgeContent={cart.data.total_items} color='primary'>
-                        cart
+                        سبد خرید
                       </Badge>
                     ):(
                       'سبد خرید'
