@@ -449,7 +449,7 @@ function Checkout(props) {
       {cart.loading ? (
         <CircularProgress />
       ) : (
-        <Grid container style={{direction:'rtl'}}>
+        <Grid container>
           <Grid item md={8}>
             <Card className={classes.p1}>
               <form>
