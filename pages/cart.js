@@ -61,7 +61,7 @@ function Cart(props) {
         </Alert>
       ) : (
         <React.Fragment>
-          <Typography variant="h1" component="h1">
+          <Typography align="right" variant="h1" component="h1">
             سبد خرید
           </Typography>
           <Slide direction="up" in={true}>
