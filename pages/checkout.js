@@ -481,7 +481,7 @@ function Checkout(props) {
                         </Box>
                       </Box>
                     ) : (
-                      <Box>
+                      <Box align="center">
                         <CircularProgress />
                         <Typography className={classes.instructions}>
                           ثبت سفارش
