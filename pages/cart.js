@@ -74,7 +74,7 @@ function Cart(props) {
                         <TableCell>عنوان</TableCell>
                         <TableCell align="right">موجودی</TableCell>
                         <TableCell align="right">قیمت</TableCell>
-                        <TableCell>عملیات</TableCell>
+                        <TableCell align="right">عملیات</TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
