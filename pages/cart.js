@@ -80,7 +80,7 @@ function Cart(props) {
                     <TableBody>
                       {cart.data.line_items.map((cartItem) => (
                         <TableRow key={cartItem.name}>
-                          <TableCell component="th" scope="row">
+                          <TableCell component="th" scope="row" align="right">
                             {cartItem.name}
                           </TableCell>
 
