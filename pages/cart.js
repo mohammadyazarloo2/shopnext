@@ -126,7 +126,7 @@ function Cart(props) {
                     <ListItem>
                       <Grid container>
                         <Typography variant="h6">
-                          جمع کل: {cart.data.subtotal.formatted_with_symbol}
+                          جمع کل: {cart.data.subtotal}
                         </Typography>
                       </Grid>
                     </ListItem>
