@@ -94,7 +94,7 @@ export default function Layout({
         <Container maxWidth="md" component="footer">
           <Box mt={5}>
             <Typography variant="body2" color="textSecondary" align="center">
-              shop 2021
+              تیم برنامه نویسی ماهر
             </Typography>
           </Box>
         </Container>
