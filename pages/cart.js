@@ -57,7 +57,7 @@ function Cart(props) {
         <CircularProgress />
       ) : cart.data.line_items.length === 0 ? (
         <Alert icon={false} severity="error">
-          Card is empty. <Link href="/">Go Shoping</Link>
+          Card is empty. <Link href="/">رفتن به خرید</Link>
         </Alert>
       ) : (
         <React.Fragment>
@@ -71,10 +71,10 @@ function Cart(props) {
                   <Table aria-lable="Orders">
                     <TableHead>
                       <TableRow>
-                        <TableCell>Name</TableCell>
-                        <TableCell align="right">Quantity</TableCell>
-                        <TableCell align="right">Price</TableCell>
-                        <TableCell>Action</TableCell>
+                        <TableCell>عنوان</TableCell>
+                        <TableCell align="right">موجودی</TableCell>
+                        <TableCell align="right">قیمت</TableCell>
+                        <TableCell>عملیات</TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
@@ -139,7 +139,7 @@ function Cart(props) {
                       color="primary"
                       onClick={proccedToCheckoutHandler}
                       >
-                        Procced to Checkout
+                        پرداخت و فاکتور
                       </Button>
                       }
                     </ListItem>
