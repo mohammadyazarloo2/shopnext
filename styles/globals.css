@@ -16,6 +16,7 @@ a {
 }
 
 
-.MuiStepper-alternativeLabel{
-  direction:ltr;
+.MuiStepConnector-alternativeLabel{
+      left: calc(50% + 20px) !important;
+    right: calc(-50% + 20px) !important;
 }
