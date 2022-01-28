@@ -61,7 +61,7 @@ export default function Layout({
                 href="/"
                 className={classes.toolbarTitle}
               >
-                shop
+                تیم ماهر
               </Link>
             </NextLink>
             <nav>
@@ -77,10 +77,10 @@ export default function Layout({
                       <CircularProgress />
                     ) : cart.data.total_items > 0 ? (
                       <Badge badgeContent={cart.data.total_items} color='primary'>
-                        Cart
+                        cart
                       </Badge>
                     ):(
-                      'cart'
+                      'سبد خرید'
                     )
                   }
                 </Link>
