@@ -244,6 +244,7 @@ function Checkout(props) {
               value={firstname}
               onChange={(e) => setFirstName(e.target.value)}
             />
+            <label>نام خانوادگی</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -255,6 +256,7 @@ function Checkout(props) {
               value={lastname}
               onChange={(e) => setLastName(e.target.value)}
             />
+            <label>پست الکترونیک</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -271,6 +273,7 @@ function Checkout(props) {
       case 1:
         return (
           <>
+            <label>نام حمل</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -282,6 +285,7 @@ function Checkout(props) {
               value={shippingname}
               onChange={(e) => setShippingName(e.target.value)}
             />
+            <label>خیابان حمل</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -293,6 +297,7 @@ function Checkout(props) {
               value={shippingstreet}
               onChange={(e) => setShippingStreet(e.target.value)}
             />
+            <label>شهر حمل</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -304,6 +309,7 @@ function Checkout(props) {
               value={shippingCity}
               onChange={(e) => setShippingCity(e.target.value)}
             />
+            <label>کدپستی حمل</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -316,11 +322,11 @@ function Checkout(props) {
               onChange={(e) => setShippingPostalCode(e.target.value)}
             />
             <FormControl className={classes.formControl}>
-              <InputLabel id="shippingCountry-label">Country</InputLabel>
+              <InputLabel id="shippingCountry-label">کشور</InputLabel>
               <Select
                 lableId="shippingCountry-label"
                 id="shippingCountry"
-                lable="Country"
+                lable="کشور"
                 fullWidth
                 required
                 onChange={handleShippingCountryChange}
@@ -340,7 +346,7 @@ function Checkout(props) {
               <Select
                 lableId="shippingStateProvince-label"
                 id="shippingStateProvince-label"
-                lable="State / Province"
+                lable="استان"
                 fullWidth
                 onChange={handleSubdivisionChange}
                 required
@@ -380,6 +386,7 @@ function Checkout(props) {
       case 2:
         return (
           <>
+          <label>شماره کارت</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -391,6 +398,7 @@ function Checkout(props) {
               value={cardNum}
               onChange={(e) => setCardNum(e.target.value)}
             />
+            <label>ماه اتمام</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -402,6 +410,7 @@ function Checkout(props) {
               value={expMonth}
               onChange={(e) => setExpMonth(e.target.value)}
             />
+            <label>سال اتمام</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -413,6 +422,7 @@ function Checkout(props) {
               value={expYear}
               onChange={(e) => setExpYear(e.target.value)}
             />
+            <label>Cvv</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -424,6 +434,7 @@ function Checkout(props) {
               value={cvv}
               onChange={(e) => setCvv(e.target.value)}
             />
+            <label>کدپستی</label>
             <TextField
               variant="outlined"
               margin="normal"
