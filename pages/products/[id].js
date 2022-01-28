@@ -101,11 +101,11 @@ export default function Product(props) {
                     <Grid item xs={6}>
                       {product.inventory.available > 0 ? (
                         <Alert icon={false} severity="success">
-                          In Stock
+                          موجود در انبار
                         </Alert>
                       ) : (
                         <Alert icon={false} severity="error">
-                          Unavaliable
+                          در دسترس نیست
                         </Alert>
                       )}
                     </Grid>
@@ -142,7 +142,7 @@ export default function Product(props) {
                       color="primary"
                       onClick={addToCartHandle}
                     >
-                      Add To Cart
+                      افزودن به سبد خرید
                     </Button>
                   </>
                 )}
