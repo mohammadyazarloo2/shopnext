@@ -232,6 +232,7 @@ function Checkout(props) {
       case 0:
         return (
           <>
+          <label>نام</label>
             <TextField
               variant="outlined"
               margin="normal"
@@ -334,7 +335,7 @@ function Checkout(props) {
             </FormControl>
             <FormControl className={classes.formControl}>
               <InputLabel id="shippingStateProvince-label">
-                State / Province
+                استان
               </InputLabel>
               <Select
                 lableId="shippingStateProvince-label"
@@ -355,7 +356,7 @@ function Checkout(props) {
             </FormControl>
             <FormControl className={classes.formControl}>
               <InputLabel id="shippingOptions-label">
-                shipping Options
+                گزینه های حمل
               </InputLabel>
               <Select
                 lableId="shippingOptions-label"
