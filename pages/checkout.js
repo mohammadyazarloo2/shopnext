@@ -99,9 +99,9 @@ function Checkout(props) {
   //steper
   const [activeStep, setActiveStep] = useState(0);
   const steps = [
-    "customer information",
-    "shipping details",
-    "payment information",
+    "جزئیات مشتری",
+    "جزئیات حمل",
+    "جزئیات پرداخت",
   ];
 
   const handleNext = () => {
