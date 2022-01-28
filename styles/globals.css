@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+.MuiStepConnector-alternativeLabel {
+    top: 12px;
+    left: calc(-50% + 20px);
+    right: calc(50% + 20px);
+    position: absolute;
+}
