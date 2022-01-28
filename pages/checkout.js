@@ -453,7 +453,7 @@ function Checkout(props) {
           <Grid item md={8}>
             <Card className={classes.p1}>
               <form>
-                <Stepper activeStep={activeStep} alternativeLabel>
+                <Stepper style={{direction="ltr"}} activeStep={activeStep} alternativeLabel>
                   {steps.map((label) => (
                     <Step key={label}>
                       <StepLabel> {label} </StepLabel>
