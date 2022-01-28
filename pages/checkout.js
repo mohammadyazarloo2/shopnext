@@ -24,7 +24,6 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
-import "../styles/globals.css";
 import { Alert } from "@material-ui/lab";
 import Head from "next/head";
 import Image from "next/image";
