@@ -238,7 +238,7 @@ function Checkout(props) {
               required
               fullWidth
               id="firstname"
-              lable="first name"
+              lable="نام"
               name="firstname"
               value={firstname}
               onChange={(e) => setFirstName(e.target.value)}
@@ -249,7 +249,7 @@ function Checkout(props) {
               required
               fullWidth
               id="lastname"
-              lable="last name"
+              lable="نام خانوادگی"
               name="lastname"
               value={lastname}
               onChange={(e) => setLastName(e.target.value)}
@@ -260,7 +260,7 @@ function Checkout(props) {
               required
               fullWidth
               id="email"
-              lable="email"
+              lable="پست الکترونیک"
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -385,7 +385,7 @@ function Checkout(props) {
               required
               fullWidth
               id="cardNum"
-              lable="Card Number"
+              lable="شماره کارت"
               name="cardNum"
               value={cardNum}
               onChange={(e) => setCardNum(e.target.value)}
@@ -396,7 +396,7 @@ function Checkout(props) {
               required
               fullWidth
               id="expMonth"
-              lable="Expired Month"
+              lable="ماه اتمام"
               name="expMonth"
               value={expMonth}
               onChange={(e) => setExpMonth(e.target.value)}
@@ -407,7 +407,7 @@ function Checkout(props) {
               required
               fullWidth
               id="expYear"
-              lable="Expired Year"
+              lable="سال اتمام"
               name="expYear"
               value={expYear}
               onChange={(e) => setExpYear(e.target.value)}
@@ -429,7 +429,7 @@ function Checkout(props) {
               required
               fullWidth
               id="biilingPostalZipCode"
-              lable="Biiling Postal Zip Code"
+              lable="کدپستی"
               name="biilingPostalZipCode"
               value={biilingPostalZipCode}
               onChange={(e) => setBillingPostalZipCode(e.target.value)}
@@ -444,7 +444,7 @@ function Checkout(props) {
   return (
     <Layout title="" commercePublicKey={props.commercePublicKey}>
       <Typography gutterBottom variant="h6" color="textPrimary" component="h1">
-        Checkout
+        پرداخت و فاکتور محصول
       </Typography>
       {cart.loading ? (
         <CircularProgress />
@@ -497,7 +497,7 @@ function Checkout(props) {
                           onClick={handleBack}
                           className={classes.button}
                         >
-                          Back
+                          بازگشت
                         </Button>
                         <Button
                           variant="contained"
@@ -521,7 +521,7 @@ function Checkout(props) {
             <Card>
               <List>
                 <ListItem>
-                  <Typography variant="h2"> Order Summary </Typography>
+                  <Typography variant="h2"> خلاصه سفارش </Typography>
                 </ListItem>
                 {cart.data.line_items.map((lineItem) => (
                   <ListItem key={lineItem.id}>
@@ -539,7 +539,7 @@ function Checkout(props) {
                 ))}
                 <Grid container>
                   <Grid item xs={6}>
-                    subtotal
+                    جمع کل
                   </Grid>
                   <Grid item xs={6}>
                     {cart.data.subtotal.formatted_with_symbol}
