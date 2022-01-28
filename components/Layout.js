@@ -88,7 +88,7 @@ export default function Layout({
             </nav>
           </Toolbar>
         </AppBar>
-        <Container component="main" className={classes.main}>
+        <Container dir="rtl" component="main" className={classes.main}>
           {children}
         </Container>
         <Container maxWidth="md" component="footer">
