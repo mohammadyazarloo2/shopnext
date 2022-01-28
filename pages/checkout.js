@@ -526,11 +526,11 @@ function Checkout(props) {
                 {cart.data.line_items.map((lineItem) => (
                   <ListItem key={lineItem.id}>
                     <Grid container>
-                      <Grid item xs={6}>
+                      <Grid item xs={6} align="right">
                         {lineItem.quantity} x {lineItem.name}
                       </Grid>
                       <Grid item xs={6}>
-                        <Typography align="right">
+                        <Typography align="left">
                           {lineItem.line_total.formatted_with_symbol}
                         </Typography>
                       </Grid>
@@ -538,10 +538,10 @@ function Checkout(props) {
                   </ListItem>
                 ))}
                 <Grid container>
-                  <Grid item xs={6}>
+                  <Grid item xs={6} align="right">
                     جمع کل
                   </Grid>
-                  <Grid item xs={6}>
+                  <Grid item xs={6} align="left">
                     {cart.data.subtotal.formatted_with_symbol}
                   </Grid>
                 </Grid>
