@@ -57,7 +57,7 @@ function Cart(props) {
         <CircularProgress />
       ) : cart.data.line_items.length === 0 ? (
         <Alert icon={false} severity="error">
-          Card is empty. <Link href="/">رفتن به خرید</Link>
+          سبد خرید خالی می باشد. <Link href="/">رفتن به خرید</Link>
         </Alert>
       ) : (
         <React.Fragment>
