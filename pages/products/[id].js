@@ -85,8 +85,8 @@ export default function Product(props) {
               <List>
                 <ListItem>
                   <Grid container>
-                    <Grid item xs={6}>
-                      Price
+                    <Grid item xs={6} align="right">
+                      قیمت
                     </Grid>
                     <Grid item xs={6}>
                       {product.price.formatted_with_symbol}
@@ -95,8 +95,8 @@ export default function Product(props) {
                 </ListItem>
                 <ListItem>
                   <Grid alignItems="center" container>
-                    <Grid item xs={6}>
-                      Status
+                    <Grid item xs={6} align="right">
+                      وضعیت
                     </Grid>
                     <Grid item xs={6}>
                       {product.inventory.available > 0 ? (
@@ -115,8 +115,8 @@ export default function Product(props) {
                   <>
                     <ListItem>
                       <Grid container justify="flex-end">
-                        <Grid item xs={6}>
-                          quantity
+                        <Grid item xs={6} align="right">
+                          تعداد
                         </Grid>
                         <Grid item xs={6}>
                           <Select
