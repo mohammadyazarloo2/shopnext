@@ -537,14 +537,16 @@ function Checkout(props) {
                     </Grid>
                   </ListItem>
                 ))}
-                <Grid container>
-                  <Grid item xs={6} align="right">
-                    جمع کل
+                <ListItem key={lineItem.id}>
+                  <Grid container>
+                    <Grid item xs={6} align="right">
+                      جمع کل
+                    </Grid>
+                    <Grid item xs={6} align="left">
+                      {cart.data.subtotal.formatted_with_symbol}
+                    </Grid>
                   </Grid>
-                  <Grid item xs={6} align="left">
-                    {cart.data.subtotal.formatted_with_symbol}
-                  </Grid>
-                </Grid>
+                </ListItem>
               </List>
             </Card>
           </Grid>
