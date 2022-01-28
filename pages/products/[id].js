@@ -73,7 +73,7 @@ export default function Product(props) {
                 </Typography>
               </ListItem>
               <ListItem>
-                <Box
+                <Box align="right"
                   dangerouslySetInnerHTML={{ __html: product.description }}
                 ></Box>
               </ListItem>
